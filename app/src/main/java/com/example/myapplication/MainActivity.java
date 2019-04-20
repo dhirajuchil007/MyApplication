@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements DemoAdapter.OnIte
         fixedValue=findViewById(R.id.fixedValue_tv);
         point=findViewById(R.id.point_text);
         view=findViewById(R.id.back_view);
+        point.setText("Loading....");
+
 
 
 
@@ -94,6 +96,7 @@ public class MainActivity extends AppCompatActivity implements DemoAdapter.OnIte
                     demoDataList.add(d);
                     demoAdapter.setData(demoDataList,MainActivity.this);
                     dataList.setAdapter(demoAdapter);
+                    point.setText("");
 
                 }
 

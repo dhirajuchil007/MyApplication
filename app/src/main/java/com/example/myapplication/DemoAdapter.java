@@ -44,12 +44,13 @@ public class DemoAdapter extends RecyclerView.Adapter<DemoAdapter.MyViewHolder>{
         if(position==rowIndex)
         {
             holder.dateTextView.setTextColor(context.getResources().getColor(R.color.white));
-            holder.cardView.setBackgroundColor(context.getResources().getColor(R.color.blueLight));
+            holder.cardView.setCardBackgroundColor(context.getResources().getColor(R.color.blueLight));
+
         }
         else
         {
             holder.dateTextView.setTextColor(context.getResources().getColor(R.color.black));
-            holder.cardView.setBackgroundColor(context.getResources().getColor(R.color.white));
+            holder.cardView.setCardBackgroundColor(context.getResources().getColor(R.color.white));
 
 
         }
